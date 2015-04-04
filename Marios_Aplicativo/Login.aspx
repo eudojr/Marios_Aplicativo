@@ -106,7 +106,7 @@
 				  </div>
 				  <div>
 					<span>Contraseña<label>*</label></span>
-					<asp:TextBox ID="txt_contrasena_usuario" runat="server"></asp:TextBox> 
+					<asp:TextBox ID="txt_contrasena_usuario" runat="server" TextMode="Password"></asp:TextBox> 
 				  </div>
 				  <a class="forgot" href="#">Olvidasta tu contraseña?</a>
 				 <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 

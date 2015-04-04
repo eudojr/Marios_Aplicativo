@@ -36,8 +36,8 @@ namespace Marios_Aplicativo
             {
                 case "0":
                     //Acceso restringido
-
-
+      
+                    
                     break; 
 
                 case "1":

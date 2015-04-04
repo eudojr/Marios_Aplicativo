@@ -1416,8 +1416,11 @@ i.mail{
 	padding: 0.5em;
 }
 .login-right input[type="submit"] {
-	background: #E24425;
-	color: #FFF;
+	border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background: #E24425;
+    color: #FFF;
 	font-size: 1em;
 	padding: 0.7em 1.2em;
 	transition: 0.5s all;
@@ -1426,8 +1429,8 @@ i.mail{
 	-o-transition: 0.5s all;
 	display: inline-block;
 	text-transform: uppercase;
-	border:none;
 	outline:none;
+    height: 42px;
 }
 a.forgot {
 	font-size: 1em;

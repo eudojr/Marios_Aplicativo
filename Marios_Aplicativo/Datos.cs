@@ -66,7 +66,7 @@ namespace Marios_Aplicativo
                 cmd.ExecuteScalar();
 
                 pTipoUsr = cmd.Parameters["@VarOut"].Value.ToString();
-               
+                pNombre_Apellido = cmd.Parameters["@NomApe"].Value.ToString();
                 
             }
             catch (Exception ex)
