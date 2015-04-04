@@ -84,7 +84,7 @@ height: 'auto',
 		<div class="container">
 			<div class="top-header">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
+					<a href="login.aspx"><img src="images/logo (2).png" class="img-responsive" alt="" /></a>
 				</div>
 				<div class="queries">
 					<p>Questions? Call us Toll-free!<span>1800-0000-7777 </span><label>(11AM to 11PM)</label></p>

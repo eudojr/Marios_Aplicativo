@@ -39,7 +39,7 @@
 		<div class="container">
 			<div class="top-header">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
+					<a href="login.aspx"><img src="images/logo.png" class="img-responsive" alt="" /></a>
 				</div>
 				<div class="queries">
 					<p><span>Bienvenido </span><asp:Label ID="label_nombre_apellido" runat="server" Text="Label"></asp:Label></p>
