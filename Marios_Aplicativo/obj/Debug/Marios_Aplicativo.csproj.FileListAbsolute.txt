@@ -1,0 +1,9 @@
+C:\Users\ATESIS16\Documents\Visual Studio 2008\Projects\Marios_Aplicativo\Marios_Aplicativo\bin\Marios_Aplicativo.dll
+C:\Users\ATESIS16\Documents\Visual Studio 2008\Projects\Marios_Aplicativo\Marios_Aplicativo\bin\Marios_Aplicativo.pdb
+C:\Users\ATESIS16\Documents\Visual Studio 2008\Projects\Marios_Aplicativo\Marios_Aplicativo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ATESIS16\Documents\Visual Studio 2008\Projects\Marios_Aplicativo\Marios_Aplicativo\obj\Debug\Marios_Aplicativo.dll
+C:\Users\ATESIS16\Documents\Visual Studio 2008\Projects\Marios_Aplicativo\Marios_Aplicativo\obj\Debug\Marios_Aplicativo.pdb
+C:\Users\ATESIS16\Documents\Visual Studio 2010\Projects\Marios_Aplicativo\Marios_Aplicativo\bin\Marios_Aplicativo.dll
+C:\Users\ATESIS16\Documents\Visual Studio 2010\Projects\Marios_Aplicativo\Marios_Aplicativo\bin\Marios_Aplicativo.pdb
+C:\Users\ATESIS16\Documents\Visual Studio 2010\Projects\Marios_Aplicativo\Marios_Aplicativo\obj\Debug\Marios_Aplicativo.dll
+C:\Users\ATESIS16\Documents\Visual Studio 2010\Projects\Marios_Aplicativo\Marios_Aplicativo\obj\Debug\Marios_Aplicativo.pdb
