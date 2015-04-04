@@ -52,9 +52,10 @@
 				<div class="top-menu">
 					<ul>
 						<li class="active"><a href="#Home" class="scroll">Home</a></li>|
-						<li><a href="Menu_alimentos.aspx">ALIMENTOS</a></li>|
-						<li><a href="construir_plato.aspx">CONSTRUIR PLATO</a></li>|
-						<li><a href="contact.html">REPORTES</a></li>
+						<li><a href="Menu_alimentos.aspx"> AGREGAR ALIMENTOS</a></li>|
+						<li><a href="construir_plato.aspx">CONSTRUIR PLATOS</a></li>|
+						<li><a href="contact.html">MENU DEL DíA</a></li>|
+                        <li><a href="contact.html">Reportes</a></li>
 						<div class="clearfix"></div>
 					</ul>
 				</div>

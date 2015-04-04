@@ -51,10 +51,10 @@
 			<div class="container">
 				<div class="top-menu">
 					<ul>
-						<li class="active"><a href="index.aspx">Home</a></li>|
-						<li><a href="menu-alimentos.aspx">Alimentos</a></li>|
-						<li><a href="Order.html">Platos</a></li>|
-						<li><a href="contact.html">Menu</a></li>
+						<li class="active"><a href="index_administrador.aspx">Home</a></li>|
+						<li><a href="Menu_alimentos.aspx"> AGREGAR ALIMENTOS</a></li>|
+						<li><a href="construir_plato.aspx">CONSTRUIR PLATOS</a></li>|
+						<li><a href="contact.html">MENU DEL DíA</a></li>|
                         <li><a href="contact.html">Reportes</a></li>
 						<div class="clearfix"></div>
 					</ul>
