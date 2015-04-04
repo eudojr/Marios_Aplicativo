@@ -2166,6 +2166,19 @@ address {
 	height: 68px;
 	width: 369px;
 }
+.btnCustom input[type="button"]
+{
+    display: block;
+	padding: 0.5em 1.5em;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border:none;
+	background:#5BBD50;
+	color:#fff;
+	margin: 1em 0 0 1em;
+    }
+
 .order-form-grid input[type="button"]:hover{
 	background:#E24425;
 }
