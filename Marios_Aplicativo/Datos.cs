@@ -20,9 +20,17 @@ namespace Marios_Aplicativo
     
     public class Datos:Page
     {
+        //Variables para hacer login
         private string pUsuario;
         private string pContrasenia;
         public string pTipoUsr;
+        public string pNombre_Apellido;
+
+        //Variables para insertar platos
+        public string combobox_proteina;
+        public string combobox_ensalada;
+        public string combobox_acompanamiento;
+        public string validar;
 
         string connStr = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;
 
@@ -49,6 +57,7 @@ namespace Marios_Aplicativo
             cmd.Parameters.Add("@ID_usuario", SqlDbType.VarChar, 15).Value = pUsuario;
             cmd.Parameters.Add("@Password", SqlDbType.VarChar, 20).Value = pContrasenia;
             cmd.Parameters.Add("@VarOut", SqlDbType.Int).Direction = ParameterDirection.Output;
+            cmd.Parameters.Add("@NomApe", SqlDbType.VarChar, 100).Direction = ParameterDirection.Output;
 
 
             try
@@ -66,6 +75,53 @@ namespace Marios_Aplicativo
             }
            
         }
+        public DataTable cargar_combobox(int tipo)
+        {
+
+            DataTable comida_disponible = new DataTable();
+            SqlConnection con = new SqlConnection(connStr);
+            SqlCommand cmd = new SqlCommand("PA_MARIOS_QUERY_COMIDA", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.Add("@ID_clasificacion", SqlDbType.VarChar, 15).Value = tipo;
+            cmd.Parameters.Add("@VarOut", SqlDbType.Int).Direction = ParameterDirection.Output;
+
+            try
+            {
+                con.Open();
+                cmd.ExecuteScalar();
+                SqlDataAdapter adaptador = new SqlDataAdapter(cmd);
+                adaptador.Fill(comida_disponible);
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return comida_disponible;
+        }
+
+        public void crear_plato()
+        {
+            SqlConnection con = new SqlConnection(connStr);
+            SqlCommand cmd = new SqlCommand("PA_MARIOS_INSERT_MENU_PRINCIPAL", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.Add("@ID_principal_proteina", SqlDbType.VarChar, 2).Value = combobox_proteina;
+            cmd.Parameters.Add("@ID_principal_ensalada", SqlDbType.VarChar, 2).Value = combobox_ensalada;
+            cmd.Parameters.Add("@ID_principal_acompanamiento", SqlDbType.VarChar, 2).Value = combobox_acompanamiento;
+            cmd.Parameters.Add("@VarOut", SqlDbType.Int).Direction = ParameterDirection.Output;
+
+            try
+            {
+                con.Open();
+                cmd.ExecuteScalar();
+                validar = cmd.Parameters["@VarOut"].Value.ToString();
+            }
+            catch (Exception ex)
+            {
+            }
+        }   
 
         public DataTable GetAlimentos(Int32 tipo)
         {

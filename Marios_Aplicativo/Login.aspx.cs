@@ -30,6 +30,7 @@ namespace Marios_Aplicativo
             Mycontroller.PContrasenia = txt_contrasena_usuario.Text;
             Mycontroller.Validar();
 
+            Session["nombreusuario"] = Mycontroller.pNombre_Apellido;
 
             switch (Mycontroller.pTipoUsr)
             {
@@ -41,6 +42,7 @@ namespace Marios_Aplicativo
 
                 case "1":
                     //Administrador
+                    Response.Redirect("index_administrador.aspx");
 
 
                     break;                
