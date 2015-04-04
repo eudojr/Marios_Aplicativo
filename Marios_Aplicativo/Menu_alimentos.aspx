@@ -105,7 +105,7 @@
                                                     <ItemTemplate>
                                                         <asp:Label ID="LblLinea0" runat="server" Text='<%# Bind("ID_Principal") %>'></asp:Label>
                                                     </ItemTemplate>
-                                                    <ItemStyle HorizontalAlign="right"/>
+                                                    <ItemStyle HorizontalAlign="left"/>
 
                                     <HeaderStyle BackColor="#D9D9D9"></HeaderStyle>
                                  </asp:TemplateField>
@@ -204,7 +204,7 @@
                             </asp:GridView>
                             <asp:ObjectDataSource ID="Alimentos" runat="server" 
                                 SelectMethod="GetAlimentos" TypeName="Marios_Aplicativo.Datos" 
-                                DeleteMethod="Delete" InsertMethod="Agregar" UpdateMethod="Agregar">
+                                DeleteMethod="Delete" InsertMethod="Agregar" UpdateMethod="Actualizar">
                                 <DeleteParameters>
                                     <asp:Parameter Name="ID_Principal" Type="Int32" />
                                 </DeleteParameters>

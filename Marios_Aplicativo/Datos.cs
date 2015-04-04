@@ -220,6 +220,31 @@ namespace Marios_Aplicativo
             {
             }
         }
+        
+        public void Actualizar(string Descripcion, decimal Precio, int ID_Clasificacion, int Disponibilidad)
+        {
+            // Write your own Delete statement blocks. 
+            DataTable resultado = new DataTable();
+            SqlConnection con = new SqlConnection(connStr);
+            SqlCommand cmd = new SqlCommand("PA_MARIOS_UPDATE_COMIDA", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.Add("@Descripcion", SqlDbType.VarChar, 1).Value = Descripcion;
+            cmd.Parameters.Add("@Precio", SqlDbType.Decimal, 1).Value = Precio;
+            cmd.Parameters.Add("@ID_Clasificacion", SqlDbType.Int, 1).Value = ID_Clasificacion;
+            cmd.Parameters.Add("@Disponibilidad", SqlDbType.Int, 1).Value = Disponibilidad;
+            //cmd.Parameters.Add("@Activar", SqlDbType.Int, 1).Value = Activar;
+            cmd.Parameters.Add("@VarOut", SqlDbType.Int).Direction = ParameterDirection.Output;
+
+            try
+            {
+                con.Open();
+                cmd.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+            }
+        }
 
     }
 }
