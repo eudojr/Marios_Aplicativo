@@ -133,8 +133,7 @@ height: 'auto',
 						<div class="Column">           			
             			    <asp:DropDownList ID="dropdownlist_proteinas" class="dropdown" runat="server" DataSourceID="Proteinas" 
                             DataTextField="Descripcion" DataValueField="ID_principal" 
-                                data-settings='{"wrapperClass":"flat"}' 
-                                onselectedindexchanged="dropdownlist_proteinas_SelectedIndexChanged">
+                                data-settings='{"wrapperClass":"flat"}' >
                             </asp:DropDownList>
 
                             <asp:ObjectDataSource ID="Proteinas" runat="server" SelectMethod="cargar_combobox" TypeName="Marios_Aplicativo.Datos">
