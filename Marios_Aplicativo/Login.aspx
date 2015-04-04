@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<title>RECEIPES Bootstarp responsive Website Template| login page :: w3layouts</title>
+<title> login Mario's</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -39,10 +39,10 @@
 		<div class="container">
 			<div class="top-header">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
+					<a href="login.aspx"><img src="images/logo.png" class="img-responsive" alt="" /></a>
 				</div>
 				<div class="queries">
-					<p>Questions? Call us Toll-free!<span>1800-0000-7777 </span><label>(11AM to 11PM)</label></p>
+					<p>Preguntas? Llame al<span>000-0000 </span><label>Horario de Pedidos(11AM a 11PM)</label></p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -52,22 +52,9 @@
 				<div class="top-menu">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>|
-						<li><a href="menu_alimentos.aspx">Popular Restaurants</a></li>|
-						<li><a href="Order.html">Order</a></li>|
-						<li><a href="contact.html">contact</a></li>
-						<div class="clearfix"></div>
 					</ul>
+				</div>				
 				</div>
-				<div class="login-section">
-					<ul>
-						<li><a href="login.html">Login</a>  </li> |
-						<li><a href="register.html">Register</a> </li> |
-						<li><a href="#">Help</a></li>
-						<div class="clearfix"></div>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
 		</div>
 	</div>
 	<!-- header-section-ends -->
@@ -75,52 +62,35 @@
 	<div class="content">
 	<div class="container">
 		<div class="login-page">
-			    <div class="dreamcrub">
-			   	 <ul class="breadcrumbs">
-                    <li class="home">
-                       <a href="index.html" title="Go to Home Page">Home</a>&nbsp;
-                       <span>&gt;</span>
-                    </li>
-                    <li class="women">
-                       Login
-                    </li>
-                </ul>
-                <ul class="previous">
-                	<li><a href="index.html">Regresar a la pagina anterior</a></li>
-                </ul>
-                <div class="clearfix"></div>
-			   </div>
 			   <div class="account_grid">
 			   <div class="col-md-6 login-left wow fadeInLeft" data-wow-delay="0.4s">
 			  	 <h3>NUEVOS CLIENTES</h3>
-				 <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
 				 <a class="acount-btn" href="register.html">Crear una cuenta</a>
 			   </div>
 			   <div class="col-md-6 login-right wow fadeInRight" data-wow-delay="0.4s">
 			  	<h3>CLIENTES REGRISTRADOS</h3>
 				<p>Si tienes una cuenta con nosotros, ingresa aqui.</p>
-				<form id="form1" runat="server">
-				  <div>
-					<span>Usuario<label>*</label></span>
+                   <form id="form1" runat="server">
+				   <div>
+					   <span>Usuario<label>*</label></span>
 					<asp:TextBox ID="txt_id_usuario" runat="server"></asp:TextBox>
 				  </div>
 				  <div>
 					<span>Contraseña<label>*</label></span>
-					<asp:TextBox ID="txt_contrasena_usuario" runat="server" TextMode="Password"></asp:TextBox> 
+					<asp:TextBox ID="txt_contrasena_usuario" runat="server" TextMode="Password"  ></asp:TextBox> 
 				  </div>
 				  <a class="forgot" href="#">Olvidasta tu contraseña?</a>
 				 <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
              Text="Login" />
 			    </form>
 			   </div>	
-			   <div class="clearfix"> </div>
 			 </div>
 		   </div>
 </div>
 <div class="special-offers-section">
 			<div class="container">
 				<div class="special-offers-section-head text-center dotted-line">
-					<h4>Special Offers</h4>
+					
 				</div>
 				<div class="special-offers-section-grids">
 				 <div class="m_3"><span class="middle-dotted-line"> </span> </div>
@@ -129,13 +99,9 @@
 						<li>
 							<div class="offer">
 								<div class="offer-image">	
-									<img src="images/p1.jpg" class="img-responsive" alt=""/>
+									<img src="images/cuisine5.jpg" class="img-responsive" alt=""/>
 								</div>
 								<div class="offer-text">
-									<h4>Olister Combo pack lorem</h4>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-									<input type="button" value="Grab It">
-									<span></span>
 								</div>
 								<div class="clearfix"></div>
 							</div>
@@ -143,13 +109,9 @@
 						<li>
 							<div class="offer">
 								<div class="offer-image">	
-									<img src="images/p2.jpg" class="img-responsive" alt=""/>
+									<img src="images/cuisine4.jpg" class="img-responsive" alt=""/>
 								</div>
 								<div class="offer-text">
-									<h4>Chicken Jumbo pack lorem</h4>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-									<input type="button" value="Grab It">
-									<span></span>
 								</div>
 								<div class="clearfix"></div>
 							</div>
@@ -157,12 +119,10 @@
 						<li>
 							<div class="offer">
 								<div class="offer-image">	
-									<img src="images/p3.jpg" class="img-responsive" alt=""/>
+									<img src="images/cuisine2.jpg" alt=""/>
 								</div>
 								<div class="offer-text">
-									<h4>Crab Combo pack lorem</h4>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-									<input type="button" value="Grab It">
+									
 									<span></span>
 								</div>
 								
@@ -172,12 +132,10 @@
 						<li>
 							<div class="offer">
 								<div class="offer-image">	
-									<img src="images/p2.jpg" class="img-responsive" alt=""/>
+									<img src="images/cuisine1.jpg" alt=""/>
 								</div>
 								<div class="offer-text">
-									<h4>Chicken Jumbo pack lorem</h4>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-									<input type="button" value="Grab It">
+								
 									<span></span>
 								</div>
 								

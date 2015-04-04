@@ -87,7 +87,7 @@ height: 'auto',
 					<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
 				</div>
 				<div class="queries">
-					<p>Questions? Call us Toll-free!<span>1800-0000-7777 </span><label>(11AM to 11PM)</label></p>
+					<p>Preguntas? Llame al<span>000-0000 </span><label>Horario de Pedidos(11AM a 11PM)</label></p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
