@@ -105,7 +105,7 @@
                                                     <ItemTemplate>
                                                         <asp:Label ID="LblLinea0" runat="server" Text='<%# Bind("ID_Principal") %>'></asp:Label>
                                                     </ItemTemplate>
-                                                    <ItemStyle HorizontalAlign="left"/>
+                                                    <ItemStyle HorizontalAlign="right"/>
 
                                     <HeaderStyle BackColor="#D9D9D9"></HeaderStyle>
                                  </asp:TemplateField>
